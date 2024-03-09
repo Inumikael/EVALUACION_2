@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVA_2_5_SUPER">
+  <ClassDiagramComponents>
+    <Class name="Estudiante" package="eva_2_5_super" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="noControl" type="String" visibility="private"/>
+        <Field name="carrera" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apPaterno"/>
+          <Argument type="String" name="apMaterno"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="char" name="genero"/>
+          <Argument type="String" name="noControl"/>
+          <Argument type="String" name="Carrera"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNoControl" returnType="String" visibility="public"/>
+        <Method name="setNoControl" returnType="void" visibility="public">
+          <Argument type="String" name="noControl"/>
+        </Method>
+        <Method name="getCarrera" returnType="String" visibility="public"/>
+        <Method name="setCarrera" returnType="void" visibility="public">
+          <Argument type="String" name="Carrera"/>
+        </Method>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EVA_2_5_SUPER" package="eva_2_5_super" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="eva_2_5_super" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apPaterno" type="String" visibility="private"/>
+        <Field name="apMaterno" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="genero" type="char" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apPaterno"/>
+          <Argument type="String" name="apMaterno"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="char" name="genero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApPaterno" returnType="String" visibility="public"/>
+        <Method name="setApPaterno" returnType="void" visibility="public">
+          <Argument type="String" name="apPaterno"/>
+        </Method>
+        <Method name="getApMaterno" returnType="String" visibility="public"/>
+        <Method name="setApMaterno" returnType="void" visibility="public">
+          <Argument type="String" name="apMaterno"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="getGenero" returnType="char" visibility="public"/>
+        <Method name="setGenero" returnType="void" visibility="public">
+          <Argument type="char" name="genero"/>
+        </Method>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva_2_5_super.Estudiante" target="eva_2_5_super.Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

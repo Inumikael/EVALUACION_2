@@ -6,39 +6,35 @@
 
 package eva2_9_final;
 
-/**
- *
- * @author invitado
- */
-public  class Computo extends Electronica{
+public class Computo extends Electronica {
     private int ram;
     private String hd;
-    private String Procesador;
+    private String procesador;
 
     public Computo() {
         this.ram = 0;
         this.hd = "Sin disco duro";
-        this.Procesador= "Sin Ram";
-    
-
-    public Computo(int ram, String hd, String Procesador) {
-        this.ram = ram;
-        this.hd = hd;
-        this.Procesador = Procesador;
+        this.procesador = "Sin procesador";
     }
 
-    public Computo(int ram, String hd, String Procesador, String marca, boolean garantia) {
+    public Computo(int ram, String hd, String procesador) {
+        this.ram = ram;
+        this.hd = hd;
+        this.procesador = procesador;
+    }
+
+    public Computo(int ram, String hd, String procesador, String marca, boolean garantia) {
         super(marca, garantia);
         this.ram = ram;
         this.hd = hd;
-        this.Procesador = Procesador;
+        this.procesador = procesador;
     }
 
-    public Computo(int ram, String hd, String Procesador, String marca, boolean garantia, double precio, String nombre) {
+    public Computo(int ram, String hd, String procesador, String marca, boolean garantia, double precio, String nombre) {
         super(marca, garantia, precio, nombre);
         this.ram = ram;
         this.hd = hd;
-        this.Procesador = Procesador;
+        this.procesador = procesador;
     }
 
     public int getRam() {
@@ -58,13 +54,17 @@ public  class Computo extends Electronica{
     }
 
     public String getProcesador() {
-        return Procesador;
+        return procesador;
     }
 
-    public void setProcesador(String Procesador) {
-        this.Procesador = Procesador;
+    public void setProcesador(String procesador) {
+        this.procesador = procesador;
     }
-     String cade = super.toString() +  "\n";
-             cade += "Ram: "  + ram + "\n" + "Hd: " + hd + "\n" + "Procesador: " + procesador;
-             return cade;     
+
+    @Override
+    public String toString() {
+        String cade = super.toString() + "\n";
+        cade += "Ram: " + ram + "\n" + "Hd: " + hd + "\n" + "Procesador: " + procesador;
+        return cade;
+    }
 }

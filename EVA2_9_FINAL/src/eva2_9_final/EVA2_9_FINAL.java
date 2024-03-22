@@ -6,21 +6,12 @@
 
 package eva2_9_final;
 
-/**
- *
- * @author invitado
- */
 public class EVA2_9_FINAL {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
         //Final----> Pone fin a la herencia
-       Computo computo = new Computo (12,"1 TB", "Intel Core I3","Legion" , "False" , "Lenovo" , 20000);
-       
-    
-    
-
+        Computo computo = new Computo(12, "1 TB", "Intel Core I3", "Legion", false, 20000, "Computador");
+        System.out.println(computo.toString());
     }
+}

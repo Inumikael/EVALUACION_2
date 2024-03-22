@@ -8,7 +8,7 @@ package eva2_9_final;
 
 /**
  *
- * @author invitado
+ * @author Luisin
  */
 public class Laptop extends Computo {
     

@@ -1,33 +1,44 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 package eva2_13_polimorfismo_2;
 
 /**
  *
- * @author invitado
+ * @author alex_
  */
 public class Estudiante extends Persona {
     private String noControl;
 
     public Estudiante() {
-    }
-
-    public Estudiante(String noControl) {
-        this.noControl = noControl;
+        super();
+         this.noControl = " ";
     }
 
     public Estudiante(String noControl, String nombre, String apellido) {
         super(nombre, apellido);
         this.noControl = noControl;
     }
-    @Override
+
+    public Estudiante(String noControl) {
+        this.noControl = noControl;
+    }
+
+    public String getNoControl() {
+        return noControl;
+    }
+
+    public void setNoControl(String noControl) {
+        this.noControl = noControl;
+    }
+@Override
+public String toString(){
+return super.toString() + " " + noControl;
+}
+   @Override
     public void imprimirDatos() {
         super.imprimirDatos();
-        System.out.println("No Control: " + noControl );
+        System.out.println("NoControl: " + noControl);
     }
-    
 }
